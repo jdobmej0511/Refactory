@@ -23,14 +23,15 @@ public class App {
         grabarFicheroPedido();
     }
 
-    private static void grabarFicheroPedido() {
-        // TODO Auto-generated method stub
-        System.out.println("Procesar pedido para: " + pedido.getNombreCliente);
-        System.out.println("ID cliente: " + pedido.get);
+    private static void grabarFicheroPedido(Pedido pedido) {
+        System.out.println("Procesar pedido para: " + pedido.getCliente().getNombreCliente());
+        System.out.println("ID cliente: " + pedido.getCliente().getIdCliente());
+        System.out.println("Dirección cliente: " + pedido.getCliente().getDireccionCliente());
+
     }
 
-    private static void imprimirPedidoConsola() {
-        // TODO Auto-generated method stub
-        
+    private static void imprimirPedidoConsola(Pedido pedido) {
+        System.out.println("Dirección cliente: " + pedido.getCliente().getDireccionCliente());
+        System.out.println("Aplicar descuento: " + pedido.getProductos().);
     }
 }
